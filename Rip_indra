@@ -1,5 +1,5 @@
-getgenv().DoughKing = function()
-    local url = 'https://donebell.vercel.app/api/Dough'
+getgenv().RipIndra = function()
+    local url = 'https://donebell.vercel.app/api/Rip'
     local chooses
     local foundServers = game:GetService('HttpService'):JSONDecode(game:HttpGet(url))
     for i,v in foundServers do 
@@ -28,7 +28,7 @@ spawn(function()
   while task.wait() do
     pcall(function()
       if not CheckBossAttack() then
-        return DoughKing()
+        return RipIndra()
       end
     end)
   end
